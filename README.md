@@ -1,3 +1,3 @@
 # zarchi-website
 
-I'm strong then the chimp
+I'm stronger then the chimp
