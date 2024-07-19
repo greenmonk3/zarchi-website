@@ -1,58 +1,133 @@
 p {
-    color:darkslategray;
+    color: darkslategray;
 }
+
 h1 {
-    color:darkslategray;
+    color: darkslategray;
     font-size: 4.25em;
 }
+
 h2 {
-    color:darkslategray;
+    color: darkslategray;
     font-size: 2.5em;
 }
+
 h3 {
-    color:darkslategray;
+    color: darkslategray;
     font-size: 1.5em;
 }
+
 body {
-    cursor:crosshair;
-    background-color: #ffe4c4;
+    cursor: crosshair;
+    /* background-color: #ffe4c4; */
     text-align: center;
+    background-color: #D4BEBE;
+    background: rgb(212, 190, 190);
+    background: linear-gradient(180deg, rgba(212, 190, 190, 1) 35%, rgba(194, 83, 221, 1) 100%);
 }
 
 img {
     border-radius: 25px
 }
+
 img:hover {
     box-shadow: 0 0 10px 5px rgba(0, 140, 186, 0.5);
-  }
-  #imgme {
+}
+
+#imgme {
     margin-left: 250px;
     margin-right: 250px;
-    width:500px;
-    height:750px;
-  }
-  #imgchimp {
-   
     width: 500px;
-    height:750px;
-  
-  }
+    height: 750px;
+}
+
+#imgchimp {
+
+    width: 500px;
+    height: 750px;
+
+}
+
 #navid {
     right: 1000px;
 }
 
-.container {
+
+
+.navcontainer {
     display: grid;
     grid-template-columns: 45% 10% 45%;
     grid-template-rows: auto;
-    /*gap: 10px;*/
+    border: 2px solid #000000; /* Adds a solid border */
+    border-radius: 8px; /* Rounds the corners of the border */
+    padding: 10px; /* Adds padding inside the border */
+    background-color: #d1aeae; /* Background color for the container */
 }
+
+#formid {
+    border: 2px solid #000000; /* Adds a solid border */
+    border-radius: 8px; /* Rounds the corners of the border */
+    padding: 10px; /* Adds padding inside the border */
+    background-color: #d1aeae; /* Background color for the container */
+}
+
+    /*gap: 10px;*/
+
+
+/* .navcontainer {
+    width: 500px;
+    height: 350px;
+    /* padding: 50px; */
+    /* border: 5px solid rgb(0, 0, 0);
+    box-sizing: border-box; */
+/* } */ */
 
 .navbar {
     align-items: center;
 }
 
-/*
+
 #list {
-    left: ;
+    font-size: 2em;
+    margin-right: 50px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 2px;
+    border: 2px solid black;
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    cursor: pointer;
+    background-color: #f0f0f0;
+}
+
+.cell:hover {
+    background-color: #ddd;
+}
+
+.chatbot { 
+        margin-left: 1000px;
+        width: 500px;
+        height: 350px;
+        /* padding: 50px; */
+        border: 5px solid rgb(0, 0, 0);
+        box-sizing: border-box;
+      }
+#Me {
+    margin-right: 30px;
 }

@@ -1,125 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Me versus Chimpanzee    </title>
+    <title>Me versus Chimpanzee </title>
 </head>
+
 <body>
     <header>
-        <h1><marquee behavior="alternate" direction="right"><b> 
-             Me versus Chimpanzee
-        </b></marquee></h1>
-         
+        <h1>
+            <marquee behavior="alternate" direction="right"><b>
+                    Me versus Chimpanzee
+                </b></marquee>
+        </h1>
+
     </header>
-    <hr> 
+    <hr>
     <main>
-        <div class="container">
+<section class ="chatbot">
+        <h1>Chatbot</h1>
+        <form id="inputForm">
+            <label for="textInput">Enter your prompt:</label><br>
+            <textarea id="textInput" rows="4" cols="50" placeholder="Enter your prompt here"></textarea><br>
+            <button type="submit">Generate Text</button>
+        </form>
+        <div id="generated-text">Loading...</div>
+
+        <script src="frontend.js"></script>
+</section>
+<br>
+<br>
+<br>
+
+        <div class="navcontainer">
             <div class="item"><img id="imgme" src="assets/images/me1.jpg" alt="buff dude :/"></div>
-            
+
             <div class="item navbar">
                 <nav id="navid">
                     <h2 id="mv">
                         Main Navigation
                     </h2>
-                        <ul id="list">
-                            <a href="#HistoryLessonid">History Lesson</a> <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                    
-                            <a href="#Meid">Me</a> <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                    
-                            <a href="#Chimpanzeeid">Chimpanzee</a> <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                    
-                            <a href="#formid">Form</a> <br>
-                        </ul>
-                 </nav>
-                </div>
-            
-                <div class="item"><img id="imgchimp" src="assets/images/chimpanzee1.jpg" alt="chimp"></div>
-          </div>
-    <article>
-    <section id="HistoryLessonid">
-        <h2>
-            History Lesson
-        </h2>
-        <p style="white-space: pre-line;">
-            Humans have always been fascinated by combat.
-            In a philosophical perspective, it's in our nature.
-            We used to decide most things by combat and to an extent we still do: Evident from wars and fighting sports.
-            So I couldn't help ponder how I would fend against a chimpanzee.
-            Now that you know my excuse for this highly controversial debate, I'll present the sides.
-        </p>
-    </section>
-    <section id="Meid">
-        <h2>
-            Me
-        </h2>
-    <figure>
-        <img src="assets/images/me2.jpg" alt="buff dude #2 :/" width="500px" height="750"/>
-    </figure>
-        <h3>
-            Analysis
-        </h3>
-        <p style="white-space: pre-line;">
-            Coming from Arizona… It's me.  
-            Now at first glance, you may think I have no chance. 
-            But keep in mind that I'm human, the top of the food chain.  
-            Since I technically made this debate, I can do whatever I want. 
-            Thus, you should keep in mind I have both the power of weapons and the power of plot armor (I can rig the results). 
-        </p>
-    </section>
-    <section id="Chimpanzeeid">
-        <h2>
-            Chimpanzee
-        </h2>
-    <figure>
-        <img src="assets/images/chimpanzee2.jpg" alt="chimp #2" width="500px" height="750"/>
-    </figure>
-        <h3>
-            Analysis
-        </h3>
-        <p style="white-space: pre-line;">
-            Chimpanzees are among the smartest animals on earth, which makes them a worthy rival to a human.
-            They can use tools, which in the animal kingdom is comparable to a superpower.
-            They are amazing swimmers and fighters. 
-            They share almost all of our DNA, which may prove to be a disadvantage, since who knows…genetics could make them feel bad for us humans. 
-            Although, probably the most important thing to note is that chimpanzees are native to africa, which coincidentally requires a rather expensive plane ticket. 
-        </p>
-    </section>
-    </article>
-    <section id="formid">
-        <h3>
-            So Who do you choose?
-        </h3>
-    <form method="get">
-        <input type="radio" id="Me" name="Whowins" value="Me">
-        <label for="Me">Me</label><br>
-        <input type="radio" id="Chimpanzee" name="Whowins" value="Chimpanzee">
-        <label for="Chimpanzee">Chimpanzee</label><br>
-        <input type="submit" value="submit">
-      </form>
-    </section>
+                    <ul>
+                        <a id="list" href="#HistoryLessonid">History</a> <br>
+                        <a id="list" href="#HistoryLessonid">Lesson</a> <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+
+
+                        <a id="list" href="#Meid">Me</a> <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+
+
+                        <a id="list" href="#Chimpanzeeid">Chimpanzee</a> <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <a id="list" href="#formid">Form</a> <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <a id="list" href="#Gamesid">Games</a> <br>
+
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="item"><img id="imgchimp" src="assets/images/chimpanzee1.jpg" alt="chimp"></div>
+        </div>
+        <article>
+            <section id="HistoryLessonid">
+                <h2>
+                    History Lesson
+                </h2>
+                <p style="white-space: pre-line;">
+                    Humans have always been fascinated by combat.
+                    In a philosophical perspective, it's in our nature.
+                    We used to decide most things by combat and to an extent we still do: Evident from wars and fighting
+                    sports.
+                    So I couldn't help ponder how I would fend against a chimpanzee.
+                    Now that you know my excuse for this highly controversial debate, I'll present the sides.
+                </p>
+            </section>
+            <section id="Meid">
+                <h2>
+                    Me
+                </h2>
+                <figure>
+                    <img src="assets/images/me2.jpg" alt="buff dude #2 :/" width="500px" height="750" />
+                </figure>
+                <h3>
+                    Analysis
+                </h3>
+                <p style="white-space: pre-line;">
+                    Coming from Arizona… It's me.
+                    Now at first glance, you may think I have no chance.
+                    But keep in mind that I'm human, the top of the food chain.
+                    Since I technically made this debate, I can do whatever I want.
+                    Thus, you should keep in mind I have both the power of weapons and the power of plot armor (I can
+                    rig the results).
+                </p>
+            </section>
+            <section id="Chimpanzeeid">
+                <h2>
+                    Chimpanzee
+                </h2>
+                <figure>
+                    <img src="assets/images/chimpanzee2.jpg" alt="chimp #2" width="500px" height="750" />
+                </figure>
+                <h3>
+                    Analysis
+                </h3>
+                <p style="white-space: pre-line;">
+                    Chimpanzees are among the smartest animals on earth, which makes them a worthy rival to a human.
+                    They can use tools, which in the animal kingdom is comparable to a superpower.
+                    They are amazing swimmers and fighters.
+                    They share almost all of our DNA, which may prove to be a disadvantage, since who knows…genetics
+                    could make them feel bad for us humans.
+                    Although, probably the most important thing to note is that chimpanzees are native to africa, which
+                    coincidentally requires a rather expensive plane ticket.
+                </p>
+            </section>
+        </article>
+        <section id="formid">
+            <h3>
+                So Who do you choose?
+            </h3>
+            <form method="get">
+                <input type="radio" id="Me" name="Whowins" value="Me">
+                <label id="Me" for="Me">Me</label><br>
+                <input type="radio" id="Chimpanzee" name="Whowins" value="Chimpanzee">
+                <label for="Chimpanzee">Chimpanzee</label><br>
+                <input type="submit" value="submit">
+            </form>
+        </section>
+        <hr>
+        <section id="Gamesid">
+            <h2> Games</h2>
+            <div class="container">
+                <div class="board" id="board">
+                    <div class="cell" data-index="0"></div>
+                    <div class="cell" data-index="1"></div>
+                    <div class="cell" data-index="2"></div>
+                    <div class="cell" data-index="3"></div>
+                    <div class="cell" data-index="4"></div>
+                    <div class="cell" data-index="5"></div>
+                    <div class="cell" data-index="6"></div>
+                    <div class="cell" data-index="7"></div>
+                    <div class="cell" data-index="8"></div>
+
+        </section>
+
     </main>
 
     <hr>
@@ -127,9 +170,13 @@
         <p>No humans were hurt in the making of this</p>
         <p>Made by Yahli Z</p>
         <p>Administered by the beautiful UAT team ;) </p>
-    <aside>
-        <img src="assets/images/pretty.jpg" alt="very cool" width="500px" height="750">
-    </aside>
+        <aside>
+            <img src="assets/images/pretty.jpg" alt="very cool" width="500px" height="750">
+        </aside>
     </footer>
+
+
+    <script src="app.js"></script>
 </body>
+
 </html>
